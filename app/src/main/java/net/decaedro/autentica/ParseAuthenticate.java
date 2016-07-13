@@ -52,7 +52,7 @@ public class ParseAuthenticate implements ServerAuthenticate{
     public User userSignIn(String device, String user, String pass, String authType) throws Exception {
 
 		DefaultHttpClient httpClient = new DefaultHttpClient();
-		String url = "http://autenticacao.decaedro.net";
+		String url = "http://zelaznog.net/Kalitera/ajax/autentica.php";
 		pass = MD5(pass);	
         HttpPost httpPost = new HttpPost(url);
 		List nameValuePairs = new ArrayList();
